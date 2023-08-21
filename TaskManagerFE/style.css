@@ -1,0 +1,117 @@
+body {
+  background-color: rgb(240, 240, 240);
+}
+.navbar {
+  box-shadow: 2px 2px 5px rgb(172, 172, 172);
+}
+.navbar-brand {
+  color: white;
+}
+
+.taskForm {
+  margin: 20px;
+  background-color: #57c5b6;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgb(172, 172, 172);
+  border-radius: 4px;
+}
+.taskList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.taskList p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.taskList span {
+  font-weight: 400;
+}
+
+.taskList .card {
+  box-shadow: 2px 2px 5px rgb(172, 172, 172);
+  padding: 10px;
+}
+
+.taskHeading {
+  text-align: center;
+}
+
+.taskList .taskHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonContainer button {
+  background: transparent;
+  border: none;
+}
+
+.card.completed {
+  background-color: greenyellow;
+}
+.card {
+  background-color: rgba(255, 0, 0, 0.63);
+}
+
+/* LOGIN WINDOW STYLING */
+
+.loginWindow {
+  /* center a div */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin: 5rem;
+  flex-direction: column;
+  background-color: #57c5b6;
+  box-shadow: 2px 2px 5px rgb(172, 172, 172);
+  border-radius: 4px;
+}
+
+.createP {
+  margin-top: 20px;
+}
+
+.signupWindow {
+  /* center a div */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  margin: 5rem;
+  flex-direction: column;
+  background-color: #57c5b6;
+  box-shadow: 2px 2px 5px rgb(172, 172, 172);
+  border-radius: 4px;
+}
+
+#logout {
+  background-color: rgb(51, 219, 219);
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0);
+}
+
+#logout:hover {
+  background-color: aqua;
+}
+
+/* SHOW USERNAME */
+.showUser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  padding: 10px;
+}
+
+.loginFail {
+  background-color: red;
+}
+.loginSuccess {
+  background-color: rgb(38, 248, 19);
+}

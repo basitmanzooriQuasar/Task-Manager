@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Signup Page</title>
+    <!-- Linking bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #159895">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Task Manager</a>
+        <button class="btn btn-outline-success" type="submit">TM</button>
+      </div>
+    </nav>
+    <!-- Nav bar ends here -->
+    <!-- signup form starts here -->
+    <div class="container">
+      <div class="row justify-content-evenly">
+        <div class="col-md-5 signupWindow">
+          <h1>Sign Up</h1>
+          <form id="signupForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="userName"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                name="email"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="enterPassword" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="enterPassword"
+                name="password"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label"
+                >Confirm Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPassword"
+                name="passwordConfirm"
+              />
+            </div>
+
+            <div class="d-flex justify-content-end">
+              <button type="submit" class="btn btn-primary">Signup</button>
+            </div>
+            <div>
+              <p class="back">
+                Back to
+                <a href="login.html"> Login</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- signup form ends here -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="signup.js"></script>
+  </body>
+</html>
